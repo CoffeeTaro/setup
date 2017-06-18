@@ -1,0 +1,2 @@
+#/bin/bash
+pip3 freeze --local | grep -v '^\-e' | cut -d = -f 1 | xargs sudo pip3 --proxy=http://proxy.uec.ac.jp:8080 install -U 

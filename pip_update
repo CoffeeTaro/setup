@@ -1,0 +1,2 @@
+#/bin/bash
+pip --proxy=http://proxy.uec.ac.jp:8080 list --outdated | awk '{print $1}' | xargs sudo pip --proxy=http://proxy.uec.ac.jp:8080 install -U

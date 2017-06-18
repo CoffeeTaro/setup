@@ -1,0 +1,5 @@
+PROXY='proxy.uec.ac.jp:8080' # proxyサーバのドメインとポートを指定
+export http_proxy=$PROXY
+export HTTP_PROXY=$PROXY
+export https_proxy=$PROXY
+export HTTPS_PROXY=$PROXY

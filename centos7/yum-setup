@@ -1,0 +1,30 @@
+yum update -y
+yum install git -y
+yum install nmap -y
+yum install vim -y
+yum install emacs -y
+yum install -y wget
+yum install -y man-pages-ja
+
+# add repository
+yum -y install yum-plugin-priorities
+sed -i -e "s/\]$/\]\npriority=1/g" /etc/yum.repos.d/CentOS-Base.repo
+# EPEL
+yum -y install epel-release
+sed -i -e "s/enabled=1/enabled=0/g" /etc/yum.repos.d/epel.repo
+# CentOS SCLo Software collections 
+yum -y install centos-release-scl-rh centos-release-scl
+sed -i -e "s/enabled=1/enabled=0/g" /etc/yum.repos.d/CentOS-SCLo-scl.repo
+sed -i -e "s/enabled=1/enabled=0/g" /etc/yum.repos.d/CentOS-SCLo-scl-rh.repo
+# Remi
+yum -y install http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
+sed -i -e "s/enabled=1/enabled=0/g" /etc/yum.repos.d/remi-safe.repo
+
+yum --enablerepo=epel install munin munin-node -y
+yum --enablerepo=epel install nkf -y
+
+# for Python
+yum -y groupinstall "Development Tools"
+yum -y install readline-devel zlib-devel bzip2-devel sqlite-devel openssl-devel libXext.x86_64 libSM.x86_64 libXrender.x86_64 gcc libffi-devel python-devel
+yum install -y tk.x86_64 tk-devel.x86_64 tkinter.x86_64
+

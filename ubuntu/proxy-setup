@@ -1,0 +1,25 @@
+# proxy for system 
+echo '# proxy' >> /etc/environment
+echo 'export http_proxy=http://proxy.uec.ac.jp:8080' >> /etc/environment
+echo 'export HTTP_PROXY=http://proxy.uec.ac.jp:8080' >> /etc/environment
+echo 'export https_prox=http://proxy.uec.ac.jp:8080' >> /etc/environment
+echo 'export HTTPS_PROXY=http://proxy.uec.ac.jp:8080' >> /etc/environment
+echo 'export ftp_proxy=http://proxy.uec.ac.jp:8080' >> /etc/environment
+echo 'export FTP_PROXY=http://proxy.uec.ac.jp:8080' >> /etc/environment
+echo 'export no_proxy=localhost,192.168.11.222' >> /etc/environment
+echo 'export NO_PROXY=localhost,192.168.11.222' >> /etc/environment
+source ~/etc/environment
+
+# conda
+echo 'proxy_servers:' >> ~/.condarc
+echo '    http: http://proxy.uec.ac.jp:8080' >> ~/.condarc
+echo '    https: http://proxy.uec.ac.jp:8080' >> ~/.condarc
+
+# apt-get set-proxy
+sudo echo 'Acquire::ftp::proxy "http://proxy.uec.ac.jp:8080";' >> /etc/apt/apt.conf
+sudo echo 'Acquire::http::proxy "http://proxy.uec.ac.jp:8080";' >> /etc/apt/apt.conf
+sudo echo 'Acquire::https::proxy "http://proxy.uec.ac.jp:8080";' >> /etc/apt/apt.conf
+
+sudo apt-get install git -y
+# git set-proxy
+git config --global http.proxy http://proxy.uec.ac.jp:8080/

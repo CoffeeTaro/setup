@@ -1,0 +1,8 @@
+# Clamav anti-virus
+sudo apt-get -y install clamav
+sudo sed -i -e "s/^NotifyClamd/#NotifyClamd/g" /etc/clamav/freshclam.conf
+sudo rm -f /var/log/clamav/freshclam.log
+sudo touch /var/log/clamav/freshclam.log
+sudo chown clamav:clamav /var/log/clamav/freshclam.log
+sudo gpasswd -a $USER clamav
+# logout and type freshclam
