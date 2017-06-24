@@ -3,7 +3,9 @@ pip install numpy
 pip install scipy
 pip install matplotlib
 pip install pandas
+pip install mecab-python3
 pip install requests
+pip install requests_oauthlib
 pip install tweepy
 pip install twitter
 pip install virtualenv
@@ -36,3 +38,5 @@ pip install tables
 pip install cython
 pip install pyopencl
 pip install scikit-image
+pip install tensorflow
+#pip install tensorflow-gpu
