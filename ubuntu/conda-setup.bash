@@ -1,3 +1,4 @@
+#!/bin/bash
 conda update -y conda
 conda update -y --all
 conda install -y cython
@@ -13,12 +14,10 @@ conda install -y numba
 conda install -y mpich2
 conda install -y mpi4py
 conda install -y pymc
-sudo apt-get install -y r-base-dev
 conda install -y -c rpy2
 conda install -y scikit-learn
 conda install -y scilit-image
 conda install -y networkx
 conda install -y gdal
 conda install -y fiona
-pip install mecab-python3
-pip install mpld3
+./pip_setup.bash

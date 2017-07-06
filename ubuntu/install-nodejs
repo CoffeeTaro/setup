@@ -1,7 +1,0 @@
-sudo apt-get update
-sudo apt-get upgrade -y
-sudo apt-get install build-essential libssl-dev
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.25.2/install.sh | bash
-source ~/.profile
-source ~/.bashrc
-source ~/.bash_profile

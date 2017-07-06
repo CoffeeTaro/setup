@@ -1,4 +1,5 @@
-#/bin/bash
+#!/bin/bash
+pip install --upgrade pip
 pip install numpy
 pip install scipy
 pip install matplotlib
@@ -40,3 +41,6 @@ pip install pyopencl
 pip install scikit-image
 pip install tensorflow
 #pip install tensorflow-gpu
+pip install timeout-decorator
+pip install sphinx
+pip install ansible

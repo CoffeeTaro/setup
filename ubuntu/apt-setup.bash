@@ -1,3 +1,4 @@
+#!/bin/bash
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install manpages-ja
@@ -10,6 +11,9 @@ sudo apt-get install mecab libmecab-dev mecab-ipadic-utf8 -y
 # editor
 sudo apt-get install vim -y
 sudo apt-get install emacs -y
+
+# set .vimrc in home directory
+cp ./.vimrc ~/
 
 # ssh
 sudo apt-get install openssh-server -y
@@ -27,3 +31,15 @@ sudo modprobe vhost_net
 
 # munin
 sudo apt-get -y munin munin-node
+
+# python
+./pysetup.bash
+
+# ------------------
+# The programs below need your response
+
+# MeCab-NEologd
+./install_MeCab-NEologd.bash
+
+# wireshark
+sudo apt-get install wireshark -y
