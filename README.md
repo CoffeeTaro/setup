@@ -10,4 +10,8 @@ macOSは準備中です．
 ```
 git clone https://github.com/CoffeeTaro/setup
 ```
-./setup/ubuntu/
+以下のスクリプトを実行すると一部を除き全てインストールされます．  
+./setup/ubuntu/apt-setup.bash  
+./setup/centos7/yum-setup.bash  
+
+GPUのドライバ等は上記のスクリプトではインストールされません  
