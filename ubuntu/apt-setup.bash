@@ -40,15 +40,13 @@ sudo modprobe vhost_net
 sudo apt-get install munin munin-node -y
 
 # python
-PYS=`./pysetup.bash`
-echo $PYS
+`pwd`/pysetup.bash
 
 # ------------------
 # The programs below need your response
 
 # MeCab-NEologd
-MeNE=`./install_MeCab-NEologd.bash`
-echo $MeNE
+`pwd`/install_MeCab-NEologd.bash
 
 # wireshark
 sudo apt-get install wireshark -y

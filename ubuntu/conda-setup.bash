@@ -20,4 +20,4 @@ conda install -y scilit-image
 conda install -y networkx
 conda install -y gdal
 conda install -y fiona
-./pip_setup.bash
+`pwd`/pip_setup.bash
