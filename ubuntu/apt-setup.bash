@@ -33,11 +33,11 @@ sudo apt-get install xfce4 xfce4-goodies -y
 sudo apt-get install install apache2 -y
 
 # kvm
-sudo apt-get -y install qemu-kvm libvirt-bin virtinst bridge-utils -y
+sudo apt-get install qemu-kvm libvirt-bin virtinst bridge-utils -y
 sudo modprobe vhost_net
 
 # munin
-sudo apt-get -y munin munin-node
+sudo apt-get install munin munin-node -y
 
 # python
 ./pysetup.bash
