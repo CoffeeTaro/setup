@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt-get update -y
 sudo apt-get upgrade -y
-sudo apt-get install manpages-ja
+sudo apt-get install manpages-ja -y
 sudo apt-get install git -y
 sudo apt-get install nmap -y
 sudo apt-get install nkf -y
@@ -40,13 +40,15 @@ sudo modprobe vhost_net
 sudo apt-get install munin munin-node -y
 
 # python
-./pysetup.bash
+PYS=`./pysetup.bash`
+echo $PYS
 
 # ------------------
 # The programs below need your response
 
 # MeCab-NEologd
-./install_MeCab-NEologd.bash
+MeNE=`./install_MeCab-NEologd.bash`
+echo $MeNE
 
 # wireshark
 sudo apt-get install wireshark -y
