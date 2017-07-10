@@ -18,6 +18,9 @@ cp ./.vimrc ~/
 # ssh
 sudo apt-get install openssh-server -y
 
+# offline install and update
+sudo apt install apt-offline
+
 # vnc
 sudo apt-get install vnc4server -y
 sudo apt-get install xfce4 xfce4-goodies -y
