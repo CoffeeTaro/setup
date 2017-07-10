@@ -15,6 +15,10 @@ sudo apt-get install emacs -y
 
 # set .vimrc in home directory
 cp ./.vimrc ~/
+# make directory for vim
+mkdir -p ~/.vim/bundle
+# get NeoBundle from repository
+git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 
 # ssh
 sudo apt-get install openssh-server -y
