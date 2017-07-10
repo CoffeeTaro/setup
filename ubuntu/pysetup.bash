@@ -25,6 +25,8 @@ echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+pip install --upgrade pip
+pip3 install --upgrade pip3
 pip install virtualenvwrapper
 pyenv install anaconda3-4.4.0
 pyenv install 3.6.1
