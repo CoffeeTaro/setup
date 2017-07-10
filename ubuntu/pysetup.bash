@@ -23,7 +23,8 @@ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 pip install virtualenvwrapper
-source ~/.bashrc
+# Ubuntu /bin/sh is Dash, so use "." instead of "source" command.
+. ~/.bashrc
 pyenv install anaconda3-4.4.0
 pyenv install 3.6.1
 pyenv global anaconda3-4.4.0
