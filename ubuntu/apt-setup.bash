@@ -30,7 +30,7 @@ sudo apt-get install vnc4server -y
 sudo apt-get install xfce4 xfce4-goodies -y
 
 # apache
-sudo apt-get install install apache2 -y
+sudo apt-get install apache2 -y
 
 # kvm
 sudo apt-get install qemu-kvm libvirt-bin virtinst bridge-utils -y
