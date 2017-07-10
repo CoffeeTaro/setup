@@ -1,4 +1,5 @@
 #!/bin/bash
+bash
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install manpages-ja

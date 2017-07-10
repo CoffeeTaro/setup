@@ -1,4 +1,5 @@
 #!/bin/bash
+bash
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y install build-essential
@@ -22,9 +23,10 @@ git clone https://github.com/yyuu/pyenv.git ~/.pyenv
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 pip install virtualenvwrapper
-# Ubuntu /bin/sh is Dash, so use "." instead of "source" command.
-. ~/.bashrc
 pyenv install anaconda3-4.4.0
 pyenv install 3.6.1
 pyenv global anaconda3-4.4.0
