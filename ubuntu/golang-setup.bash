@@ -22,4 +22,5 @@ git clone https://github.com/syndbg/goenv.git ~/.goenv
 goenv install 1.8.3
 
 # install package manager
-sudo apt install glide -y
+sudo add-apt-repository ppa:masterminds/glide && sudo apt-get update
+sudo apt-get install glide -y

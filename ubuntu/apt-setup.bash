@@ -47,13 +47,13 @@ sudo apt-get install munin munin-node -y
 `pwd`/golang-setup.bash
 
 # Node js 
-sudo apt install nodejs
+sudo apt install nodejs -y
 
 # PHP
-sudo apt install php
+sudo apt install php -y
 
 # Ruby
-sudo apt install ruby
+`pwd`/ruby_setup.bash
 
 # ------------------
 # The programs below need your response
