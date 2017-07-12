@@ -5,6 +5,7 @@ sudo apt-get install manpages-ja -y
 sudo apt-get install git -y
 sudo apt-get install nmap -y
 sudo apt-get install nkf -y
+sudo apt install tree -y
 # MeCab
 sudo apt-get install mecab libmecab-dev mecab-ipadic-utf8 -y
 
