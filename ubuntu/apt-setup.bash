@@ -46,7 +46,14 @@ sudo apt-get install munin munin-node -y
 # Golang
 `pwd`/golang-setup.bash
 
-# Java
+# Node js 
+sudo apt install nodejs
+
+# PHP
+sudo apt install php
+
+# Ruby
+sudo apt install ruby
 
 # ------------------
 # The programs below need your response
@@ -56,3 +63,6 @@ sudo apt-get install munin munin-node -y
 
 # wireshark
 sudo apt-get install wireshark -y
+
+# Java
+`pwd`/java_setup.bash
