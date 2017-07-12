@@ -40,8 +40,13 @@ sudo modprobe vhost_net
 # munin
 sudo apt-get install munin munin-node -y
 
-# python
+# Python
 `pwd`/pysetup.bash
+
+# Golang
+`pwd`/golang-setup.bash
+
+# Java
 
 # ------------------
 # The programs below need your response
