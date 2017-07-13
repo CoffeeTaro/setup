@@ -26,9 +26,13 @@ sudo apt-get install openssh-server -y
 # offline install and update
 sudo apt install apt-offline -y
 
+# language
+# Mate
+sudo apt install -y ubuntu-mate-desktop mate-desktop-environment mate-desktop-environment-extra
+
 # vnc
-sudo apt-get install vnc4server -y
-sudo apt-get install xfce4 xfce4-goodies -y
+# sudo apt-get install vnc4server -y
+# sudo apt-get install xfce4 xfce4-goodies -y
 
 # apache
 sudo apt-get install apache2 -y
@@ -51,6 +55,9 @@ sudo apt install nodejs -y
 
 # PHP
 sudo apt install php -y
+
+# Scala
+sudo apt install scala -y
 
 # Ruby
 `pwd`/ruby_setup.bash
