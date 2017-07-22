@@ -26,6 +26,8 @@ sudo apt-get install openssh-server -y
 # offline install and update
 sudo apt install apt-offline -y
 
+sudo apt install cifs-utils
+
 # language
 # Mate
 sudo apt install -y ubuntu-mate-desktop mate-desktop-environment mate-desktop-environment-extra
@@ -44,6 +46,9 @@ sudo modprobe vhost_net
 # munin
 sudo apt-get install munin munin-node -y
 
+# docker
+`pwd`/docker_setup.bash
+
 # Python
 `pwd`/pysetup.bash
 
@@ -61,6 +66,7 @@ sudo apt install scala -y
 
 # Ruby
 `pwd`/ruby_setup.bash
+
 
 # ------------------
 # The programs below need your response
