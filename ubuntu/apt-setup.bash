@@ -30,7 +30,7 @@ sudo apt install cifs-utils
 
 # language
 # Mate
-sudo apt install -y ubuntu-mate-desktop mate-desktop-environment mate-desktop-environment-extra
+#sudo apt install -y ubuntu-mate-desktop mate-desktop-environment mate-desktop-environment-extra
 
 # vnc
 # sudo apt-get install vnc4server -y
