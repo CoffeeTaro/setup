@@ -37,6 +37,10 @@ sudo yum install -y tk.x86_64 tk-devel.x86_64 tkinter.x86_64
 # pyenv install
 ./pyenv-install.bash
 
+# Spark
+sudo yum install java-1.8.0-openjdk -y
+wget https://d3kbcqa49mib13.cloudfront.net/spark-2.2.0-bin-hadoop2.7.tgz
+
 # ------------------
 # The programs below need your response
 
