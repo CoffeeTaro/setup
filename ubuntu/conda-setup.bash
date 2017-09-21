@@ -20,4 +20,5 @@ conda install -y scilit-image
 conda install -y networkx
 conda install -y gdal
 conda install -y fiona
+conda install -y joblib
 `pwd`/pip_setup.bash
