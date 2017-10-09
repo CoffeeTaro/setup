@@ -41,7 +41,7 @@ pip install ipythonblocks
 pip install scikit-learn
 pip install scikit-image
 pip install networkx
-pip install tensorflow
+#pip install tensorflow
 #pip install tensorflow-gpu
 
 # graphic
@@ -50,6 +50,7 @@ pip install prettyplotlib
 pip install bokeh
 pip install mpld3
 pip install vispy
+pip install folium
 
 # calc distance
 pip install pyproj
@@ -64,6 +65,6 @@ pip install tables
 
 # acceleration
 pip install cython
-pip install pyopencl
+#pip install pyopencl
 pip install sphinx
 pip install ansible
