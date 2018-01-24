@@ -110,10 +110,11 @@ if dein#check_install()
 endif
 
 
+set background=dark
 "色を付ける
 syntax on
-colorscheme molokai
-
+"colorscheme molokai
+let g:molokai_original = 1
 
 
 "==============プラグイン関係の設定==============
@@ -225,3 +226,10 @@ nmap Y <Plug>(operator-flashy)$
 
 "====================EmmetHmtl"====================
 let g:user_emmet_leader_key='<C-t>'
+
+
+" markdown
+augroup PrevimSettings
+    autocmd!
+    autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+augroup END

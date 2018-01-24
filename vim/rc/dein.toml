@@ -119,3 +119,7 @@ repo = 'haya14busa/vim-operator-flashy'
 #html補完
 [[plugins]]
 repo = 'mattn/emmet-vim'
+
+#即時実行
+[[plugins]]
+repo = 'thinca/vim-quickrun'
