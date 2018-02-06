@@ -37,8 +37,8 @@ repo = "jmcantrell/vim-virtualenv"
 on_ft = ['python']
 
 [[plugins]]
-repo = 'fatih/vim-go'
-on_ft = ['go']
+repo = "derekwyatt/vim-scala"
+on_ft = ['scala']
 
 
 [[plugins]]

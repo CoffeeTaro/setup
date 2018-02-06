@@ -50,6 +50,10 @@ repo = 'Townk/vim-autoclose'
 [[plugins]]
 repo =  'scrooloose/syntastic'
 
+[[plugins]]
+repo = 'fatih/vim-go'
+
+
 # インデントの可視化　上手く機能してない？
 [[plugins]]
 repo = 'Yggdroot/indentLine'
